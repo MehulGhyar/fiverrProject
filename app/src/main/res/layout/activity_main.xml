@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/cart"
+                android:src="@drawable/ic_shopping_cart"
+                android:layout_margin="20dp"
+                />
+
+            <View
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:background="@drawable/circle"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-45dp"
+                android:layout_marginRight="-35dp"
+                />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_search"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <TextView
+                android:id="@+id/user_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, XXXXX!"
+                android:textSize="32dp"
+                android:layout_below="@+id/cart"
+                android:textColor="#F78D3A"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search for subject you want to learn"
+                android:textSize="20dp"
+                android:layout_below="@+id/user_text"
+                android:layout_marginLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/live_stream_button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/round_button"
+                android:text="Join a live stream"
+                android:layout_below="@+id/text"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="26dp"
+                android:textAlignment="textStart"
+                android:paddingLeft="30dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_margin="20dp"
+                android:drawableRight="@drawable/ic_online_meeting"
+                android:paddingRight="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/live_stream_button"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textSize="32dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/see_all"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="See All >>"
+                    android:textSize="20dp"
+                    android:textColor="#F78D3A"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/categories"
+                android:layout_below="@+id/category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="bottom"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/marketing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Marketing"
+                            android:textColor="#000"
+                            android:textSize="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:padding="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bussiness" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Bussiness "
+                            android:textColor="#000"
+                            android:textSize="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="bottom"
+                        app:cardCornerRadius="20dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:src="@drawable/maths"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mathematics "
+                            android:textSize="20dp"
+                            android:textColor="#000"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            />
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="170dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/design"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:padding="30dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Design"
+                            android:textSize="20dp"
+                            android:textColor="#000"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_below="@id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0EBEB"
+                android:layout_margin="10dp"
+                app:tabSelectedTextColor="#F78D3A"
+                app:tabTextColor="#F1BC82"
+                >
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Newest"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fratured" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bottom_menu"
+        android:background="@drawable/top_corner_curve"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/bottom_item_selector"
+        app:menu="@menu/bottom_navigation_menu_item"
+        app:itemIconSize="30dp"
+        />
+
+</RelativeLayout>

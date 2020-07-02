@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/lower_curve"
+        android:backgroundTint="#FDA04F"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Course"
+            android:textSize="32sp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_search"
+            android:layout_alignParentRight="true"
+            android:layout_margin="25dp"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_back"
+            android:tint="#fff"
+            android:layout_margin="10dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/cross_corner_curve_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:elevation="8dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/design_sub_categories_1"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="UI &amp; UX Thinking     \nFor Beginners "
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_play_video"
+            android:layout_gravity="center_vertical"
+            android:tint="#FDA04F"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/cross_corner_curve_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:elevation="8dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/design3"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Character Art           \nSchool Course"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_play_video"
+            android:layout_gravity="center_vertical"
+            android:tint="#FDA04F"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/cross_corner_curve_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:elevation="8dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/design4"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="The Ultimate            \nDrawing Course"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_play_video"
+            android:layout_gravity="center_vertical"
+            android:tint="#FDA04F"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/top_corner_curve"
+        android:backgroundTint="#FDA04F"
+        android:orientation="horizontal"
+        android:layout_above="@+id/Bottom_menu"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/design_sub_categories_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="UI &amp; UX Thinking \n For Beginners"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_play_video"
+            android:tint="#fff" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bottom_menu"
+        android:background="@drawable/top_corner_curve"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/bottom_item_selector"
+        app:menu="@menu/bottom_navigation_menu_item"
+        app:itemIconSize="30dp"
+        />
+
+</RelativeLayout>

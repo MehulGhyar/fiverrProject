@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back"
+        android:tint="#fd8524"
+        android:layout_margin="15dp"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Stream"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#fd8524"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
+
+   <LinearLayout
+       android:layout_below="@+id/text"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/top_corner_curve"
+       android:backgroundTint="#000"
+       android:orientation="vertical"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="@drawable/round_button"
+           android:backgroundTint="#fff"
+           android:layout_margin="20dp"
+           android:orientation="horizontal"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Search |"
+               android:textSize="20sp"
+               android:layout_gravity="center_vertical"
+               android:padding="10dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#fff"
+               android:textSize="20sp"
+               android:layout_gravity="center_vertical"
+               android:drawableRight="@drawable/ic_search_black"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"
+               android:layout_marginRight="15dp"
+               />
+
+       </LinearLayout>
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               >
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   app:cardCornerRadius="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   >
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/design_sub_categories_1"
+                       />
+
+                   <ImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/ic_play_video"
+                       android:tint="#fd8524"
+                       android:layout_gravity="center"
+                       />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Build a Landing Page with Elementor: Step-by-Step"
+                   android:textColor="#fff"
+                   android:textSize="20sp"
+                   android:fontFamily="sans-serif-black"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="10dp"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="By Saar Kedem"
+                   android:textColor="#fff"
+                   android:textSize="17sp"
+                   android:alpha="0.5"
+                   android:layout_marginLeft="20dp"
+                   />
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   app:cardCornerRadius="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="20dp"
+                   >
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/design3"
+                       />
+
+                   <ImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/ic_play_video"
+                       android:tint="#fd8524"
+                       android:layout_gravity="center"
+                       />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Create a Bussiness website with WordPress with this Quick 5-Step guide"
+                   android:textColor="#fff"
+                   android:textSize="20sp"
+                   android:fontFamily="sans-serif-black"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="10dp"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="By XXX YYY"
+                   android:textColor="#fff"
+                   android:textSize="17sp"
+                   android:alpha="0.5"
+                   android:layout_marginLeft="20dp"
+                   />
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   app:cardCornerRadius="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="20dp"
+                   >
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/design4"
+                       />
+
+                   <ImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/ic_play_video"
+                       android:tint="#fd8524"
+                       android:layout_gravity="center"
+                       />
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Build a Landing Page with Elementor: Step-by-Step"
+                   android:textColor="#fff"
+                   android:textSize="20sp"
+                   android:fontFamily="sans-serif-black"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="10dp"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="By Saar Kedem"
+                   android:textColor="#fff"
+                   android:textSize="17sp"
+                   android:alpha="0.5"
+                   android:layout_marginLeft="20dp"
+                   />
+
+           </LinearLayout>
+
+       </ScrollView>
+
+   </LinearLayout>
+
+</RelativeLayout>

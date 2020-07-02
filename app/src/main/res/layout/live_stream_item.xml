@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back"
+        android:tint="#fd8524"
+        android:layout_margin="5dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/back"
+        android:background="@drawable/top_corner_curve"
+        android:backgroundTint="#000"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/design_sub_categories_1"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build a Landing Page with Elementor: Step-by-Step"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By Saar Kedem"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:alpha="0.5"
+                android:layout_marginLeft="20dp"
+                />
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_below="@id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:tabSelectedTextColor="#F78D3A"
+                app:tabTextColor="#F5CCA3"
+                app:tabIndicatorHeight="0dp"
+                app:tabBackground="@drawable/tab_layout_background"
+                >
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In this tutorial, we'll be building a stylish landing page with Elementor\n
+\nMade 100% in Elementor, in this A to Z tutorial you'll learn:\n\n*Creating a page.\n
+*Building a WordPress menu...."
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Lives"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                android:layout_margin="20dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/image"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/design_sub_categories_1"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create a business website with WordPress"
+                    android:textColor="#fff"
+                    android:layout_toRightOf="@+id/image"
+                    android:textSize="17sp"
+                    android:padding="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By Saar Kedem"
+                    android:textColor="#fff"
+                    android:layout_below="@+id/name"
+                    android:layout_toRightOf="@+id/image"
+                    android:padding="4dp"
+                    android:alpha="0.5"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/image2"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/design_sub_categories_1"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create a business website with WordPress"
+                    android:textColor="#fff"
+                    android:layout_toRightOf="@+id/image2"
+                    android:textSize="17sp"
+                    android:padding="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By Saar Kedem"
+                    android:textColor="#fff"
+                    android:layout_below="@+id/name2"
+                    android:layout_toRightOf="@+id/image2"
+                    android:padding="4dp"
+                    android:alpha="0.5"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

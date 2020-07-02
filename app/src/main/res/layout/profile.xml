@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F78D3A">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_corner_curve"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXXX XY YYYYY"
+            android:gravity="center_horizontal"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXXXYYYY@gmail.com"
+            android:gravity="center_horizontal"
+            android:textSize="22dp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_margin="22dp"
+            />
+
+        <TextView
+            android:id="@+id/account_security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Account Security"
+            android:textSize="22sp"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_account"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_margin="22dp"
+            />
+
+        <TextView
+            android:id="@+id/about_academy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  About Academy"
+            android:textSize="22sp"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_help"
+            />
+
+        <TextView
+            android:id="@+id/help_feedback"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Help and Feedback"
+            android:textSize="22sp"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_help"
+            />
+
+        <TextView
+            android:id="@+id/contact_us"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Contact Us"
+            android:textSize="22sp"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_phone"
+            />
+
+        <TextView
+            android:id="@+id/share_app"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Share the Academy App"
+            android:textSize="22sp"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_share"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Logout"
+            android:textColor="#F78D3A"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/button_border"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginBottom="70dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/round_image_background"
+        android:layout_above="@+id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-60dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bottom_menu"
+        android:background="@drawable/top_corner_curve"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/bottom_item_selector"
+        app:menu="@menu/bottom_navigation_menu_item"
+        app:itemIconSize="30dp"
+        android:elevation="5dp"
+        />
+
+</RelativeLayout>
