@@ -249,6 +249,7 @@
             </LinearLayout>
 
             <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
                 android:layout_below="@id/categories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -276,6 +277,147 @@
                     android:text="Fratured" />
 
             </com.google.android.material.tabs.TabLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/tab_layout"
+                android:layout_marginBottom="55dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image_"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/design"
+                        />
+
+                    <TextView
+                        android:id="@+id/name_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UX design "
+                        android:textSize="26sp"
+                        android:layout_toRightOf="@+id/image_"
+                        android:textColor="#000"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/descri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search for subject you want to\nstudy "
+                        android:layout_below="@+id/name_"
+                        android:layout_toRightOf="@+id/image_"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2  "
+                        android:textColor="#F78D3A"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/image_"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:drawableRight="@drawable/ic_star"
+                        android:drawableTint="#F78D3A"
+                        />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_favorite"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:tint="#F78D3A"
+                        android:layout_marginRight="10dp"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/image__"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/design"
+                        />
+
+                    <TextView
+                        android:id="@+id/name__"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UX design "
+                        android:textSize="26sp"
+                        android:layout_toRightOf="@+id/image__"
+                        android:textColor="#000"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/descri_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search for subject you want to\nstudy "
+                        android:layout_below="@+id/name__"
+                        android:layout_toRightOf="@+id/image__"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/rating_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2  "
+                        android:textColor="#F78D3A"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/image__"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:drawableRight="@drawable/ic_star"
+                        android:drawableTint="#F78D3A"
+                        />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_favorite"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:tint="#F78D3A"
+                        android:layout_marginRight="10dp"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
 
         </RelativeLayout>
 
